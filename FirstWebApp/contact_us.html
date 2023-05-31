@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us - Java Software Developer</title>
+  <style>
+    /* CSS styles for navigation menu */
+    ul.nav-menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #f1f1f1;
+    }
+
+    ul.nav-menu li {
+      float: left;
+    }
+
+    ul.nav-menu li a {
+      display: block;
+      color: #333;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    ul.nav-menu li a:hover {
+      background-color: #ddd;
+    }
+
+    /* Additional styles for the page */
+    h2 {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    p {
+      text-align: justify;
+      margin: 20px;
+    }
+
+    form {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 300px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <ul class="nav-menu">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about_us.html">About Us</a></li>
+      <li><a href="contact_us.html">Contact Us</a></li>
+    </ul>
+    <h1>Contact Us</h1>
+  </header>
+  
+  <main>
+    <h2>Contact Information</h2>
+    <p>
+      Thank you for your interest! We would love to hear from you. Please feel free to contact us using the information below, or by filling out the contact form.
+    </p>
+    <p>
+      Email: manojkumarjena2022@gmail.com<br>
+      Phone: +91 8328914097<br>
+      Address: Balasore,Odisha<br>
+    </p>
+
+    <h2>Contact Form</h2>
+    <form action="/contact" method="post">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br>
+      
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+      
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" required></textarea><br>
+      
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Manoj Kumar Jena. All rights reserved.</p>
+  </footer>
+</body>
+</html>
