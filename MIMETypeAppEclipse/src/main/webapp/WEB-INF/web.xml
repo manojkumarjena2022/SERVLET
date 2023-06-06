@@ -1,0 +1,52 @@
+<web-app>
+<!--Servlet Configuration-->
+<servlet>
+<servlet-name>obj</servlet-name>
+<servlet-class>com.mj.servlet.HtmlServlet</servlet-class>
+</servlet>
+<!--Servlet Mapping-->
+<servlet-mapping>
+<servlet-name>obj</servlet-name>
+<url-pattern>/htmlurl</url-pattern>
+</servlet-mapping>
+<!--Servlet Configuration-->
+<servlet>
+<servlet-name>obj2</servlet-name>
+<servlet-class>com.mj.servlet.PlainServlet</servlet-class>
+</servlet>
+<!--Servlet Mapping-->
+<servlet-mapping>
+<servlet-name>obj2</servlet-name>
+<url-pattern>/plainurl</url-pattern>
+</servlet-mapping>
+<!--Servlet Configuration-->
+<servlet>
+<servlet-name>obj3</servlet-name>
+<servlet-class>com.mj.servlet.ExcelServlet</servlet-class>
+</servlet>
+<!--Servlet Mapping-->
+<servlet-mapping>
+<servlet-name>obj3</servlet-name>
+<url-pattern>/excelurl</url-pattern>
+</servlet-mapping>
+<!--Servlet Configuration-->
+<servlet>
+<servlet-name>obj4</servlet-name>
+<servlet-class>com.mj.servlet.WordServlet</servlet-class>
+</servlet>
+<!--Servlet Mapping-->
+<servlet-mapping>
+<servlet-name>obj4</servlet-name>
+<url-pattern>/wordurl</url-pattern>
+</servlet-mapping>
+<!--Servlet Configuration-->
+<servlet>
+<servlet-name>obj5</servlet-name>
+<servlet-class>com.mj.servlet.XMLServlet</servlet-class>
+</servlet>
+<!--Servlet Mapping-->
+<servlet-mapping>
+<servlet-name>obj5</servlet-name>
+<url-pattern>/xmlurl</url-pattern>
+</servlet-mapping>
+</web-app>
