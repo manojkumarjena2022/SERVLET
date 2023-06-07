@@ -1,0 +1,16 @@
+<web-app>
+	<!-- Configure Servlet Component -->
+	<servlet>
+		<servlet-name>welcome</servlet-name>
+		<servlet-class>com.mj.servlet.WelcomeServlet</servlet-class>
+	</servlet>
+	<!-- Servlet Mapping with URL -->
+	<servlet-mapping>
+		<servlet-name>welcome</servlet-name>
+		<url-pattern>/welcomeurl</url-pattern>
+	</servlet-mapping>
+	<!-- Configure Welcome File -->
+	<welcome-file-list>
+		<welcome-file>welcomeurl</welcome-file>
+	</welcome-file-list>
+</web-app>

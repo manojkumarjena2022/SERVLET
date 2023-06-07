@@ -1,0 +1,16 @@
+<web-app>
+<!-- Servlet Configuration -->
+<servlet>
+<servlet-name>vaccine</servlet-name>
+<servlet-class>com.mj.servlet.VaccineEligibilityCheckServlet</servlet-class>
+</servlet>
+<!-- Servlet Mapping with URL -->
+<servlet-mapping>
+<servlet-name>vaccine</servlet-name>
+<url-pattern>/check</url-pattern>
+</servlet-mapping>
+<!-- Configure Welcome File -->
+<welcome-file-list>
+<welcome-file>corrona_vaccine.html</welcome-file>
+</welcome-file-list>
+</web-app>
