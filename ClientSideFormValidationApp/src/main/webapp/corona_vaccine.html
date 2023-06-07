@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Corona Vaccine Eligibility Check</title>
+</head>
+<body>
+	<h1>Corona Vaccine Eligibility Check With Form Validation</h1>
+	<form action="check_eligibility_url" method="GET"
+		onsubmit="return validate(this)">
+		<label>Name</label> <input type="text" name="name"> <span
+			id="nameErr" style="color: red;"></span><br> <label>Address</label><input
+			type="text" name="address"> <span id="addressErr"
+			style="color: red;"></span><br> <label>Age</label> <input
+			type="text" name="age"><span id="ageErr" style="color: red;"></span>
+		<input type="submit" value="Chek">
+	</form>
+</body>
+</html>
+<script language="javascript">
+	function validate(frm) {
+		document.getElementById("nameErr").innerHTML = "";
+		document.getElementById("addressErr").innerHTML = "";
+		document.getElementById("ageErr").innerHTML = "";
+		//read form data input
+		let name = frm.name.value;
+		let address = frm.address.value;
+		let age = frm.age.value;
+		//client side validation
+		let flag = true;
+		if (name == "") {//required rule on name
+			document.getElementById("nameErr").innerHTML = "Name field is required";
+			frm.name.focus();
+			flag = false;
+		}
+		if (address == "") {//required rule on address
+			document.getElementById("addressErr").innerHTML = "Address field is required";
+			frm.address.focus();
+			flag = false;
+		}
+		else if (address.length<10) {//must be min 10 characters rule on address
+			document.getElementById("addressErr").innerHTML = "Address field must have min 10 characters";
+			frm.address.focus();
+			flag = false;
+		}
+		if (age == "") {//required rule on age
+			document.getElementById("ageErr").innerHTML = "Age field is required";
+			frm.age.focus();
+			flag = false;
+		}
+		else if (isNaN(age)) {//must be numeric value rule on address
+			document.getElementById("ageErr").innerHTML = "Age must be a numeric value";
+			frm.age.focus();
+			flag = false;
+		}
+		else if (age<0 || age>125) {//must be age between range 1 to 125 rule on address
+			document.getElementById("ageErr").innerHTML = "Age must bein range between 1 to 125";
+			frm.age.focus();
+			flag = false;
+		}
+		return flag;
+	}
+</script>
