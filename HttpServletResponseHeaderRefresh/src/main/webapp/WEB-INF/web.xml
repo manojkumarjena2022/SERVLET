@@ -1,0 +1,12 @@
+<web-app>
+<!-- Servlet configuration -->
+<servlet>
+<servlet-name>wish</servlet-name>
+<servlet-class>com.mj.servlet.WishServlet</servlet-class>
+</servlet>
+<!-- Mapping servlet with url -->
+<servlet-mapping>
+<servlet-name>wish</servlet-name>
+<url-pattern>/wishurl</url-pattern>
+</servlet-mapping>
+</web-app>
