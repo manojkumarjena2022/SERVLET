@@ -47,7 +47,7 @@ public class EligibilityCheckServlet extends HttpServlet {
 					errorList.add("Age must be in the range 1 to 125");
 				}
 			}
-			catch (Exception e) {
+			catch (NumberFormatException e) {
 				errorList.add("Age must be a numeric value");
 			}
 		}
