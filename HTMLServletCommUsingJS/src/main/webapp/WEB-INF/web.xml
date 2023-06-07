@@ -1,0 +1,16 @@
+<web-app>
+	<!-- Servlet Configuration -->
+	<servlet>
+		<servlet-name>capital</servlet-name>
+		<servlet-class>com.mj.servlet.GetCapitalServlet</servlet-class>
+	</servlet>
+	<!-- Servlet Mapping with URL -->
+	<servlet-mapping>
+		<servlet-name>capital</servlet-name>
+		<url-pattern>/capitalurl</url-pattern>
+	</servlet-mapping>
+	<!-- Configure Welcome File -->
+	<welcome-file-list>
+		<welcome-file>page.html</welcome-file>
+	</welcome-file-list>
+</web-app>

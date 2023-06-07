@@ -1,0 +1,16 @@
+<h1>HTML To servlet communication using JavaScript</h1>
+<form name="country_form" action="capitalurl" method="GET" onchange="send()">
+	<select name="country">
+		<option value="-1">Select</option>
+		<option value="0">India</option>
+		<option value="1">Pakistan</option>
+		<option value="2">USA</option>
+		<option value="3">China</option>
+	</select>
+</form>
+<script language="javascript">
+function send()
+{
+	country_form.submit();//submit the request to action url
+}
+</script>
