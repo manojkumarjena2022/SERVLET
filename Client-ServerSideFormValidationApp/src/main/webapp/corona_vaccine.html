@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Eligibility Check For Vaccine</title>
+</head>
+<body>
+	<h1>Check vaccine eligibility with client and server side
+		validation</h1>
+	<form action="check_eligibility_url" method="POST" onsubmit="return validate(this)">
+	<input type="hidden" name="vflag" value="no">
+		<table>
+			<tr>
+			<td>Name</td><td><input type="text" name="name"><span id="errName" style="color:red;"></span></td>
+			</tr>
+			<tr>
+			<td>Address</td><td><input type="text" name="address"><span id="errAddress" style="color:red;"></span></td>
+			</tr>
+			<tr>
+			<td>Age</td><td><input type="text" name="age"><span id="errAge" style="color:red;"></span></td>
+			</tr>
+			<tr>
+			<td></td><td><input type="submit" value="Check"></td>
+			</tr>
+		</table>
+	</form>
+	<script type="text/javascript" src="js/validate.js"></script>
+</body>
+</html>
