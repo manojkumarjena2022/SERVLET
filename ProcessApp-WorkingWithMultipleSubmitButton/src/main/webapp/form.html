@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Multiple Submit Button</title>
+</head>
+<body>
+	<h1>Form With Multiple Submit Button</h1>
+	<form action="process_url" method="POST">
+		<table>
+			<tr>
+				<td>Number 1</td>
+				<td><input type="number" name="t1" required></td>
+			</tr>
+			<tr>
+				<td>Number 2</td>
+				<td><input type="number" name="t2" required></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="s1" value="add"></td>
+				<td><input type="submit" name="s1" value="sub"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="s1" value="mul"></td>
+				<td><input type="submit" name="s1" value="div"></td>
+			</tr>
+			<tr>
+				<td><a href="process_url?s1=link1">System Properties</a></td>
+				<td><a href="process_url?s1=link2">System Date</a></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
