@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Form Components</title>
+</head>
+<body>
+	<h1 style="color: red">Working With Different Types Of Form
+		Components</h1>
+	<form action="comp_url" method="POST">
+		<table>
+			<tr>
+				<td>Person Name<span
+					style="color: red;"> *</span></td>
+				<td><input type="text" name="pname" required></td>
+			</tr>
+			<tr>
+				<td>Person Age<span
+					style="color: red;"> *</span></td>
+				<td><input type="number" name="page" required></td>
+			</tr>
+			<tr>
+				<td>Person Address</td>
+				<td><textarea name="paddress"></textarea></td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td><input type="radio" name="gender" value="Male">Male<input
+					type="radio" name="gender" value="Female">Female</td>
+			</tr>
+			<tr>
+				<td>Marital Status</td>
+				<td><input type="checkbox" name="maritalStatus" value="Married">Married</td>
+			</tr>
+			<tr>
+				<td>Qualification</td>
+				<td><select name="qualification">
+						<option value="">---Select---</option>
+						<option value="B.Tech">B.Tech</option>
+						<option value="MBA">MBA</option>
+						<option value="MCA">MCA</option>
+						<option value="M.Tech">M.Tech</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Language Known</td>
+				<td><select name="language" multiple>
+						<option value="">---Select---</option>
+						<option value="ENGLISH">ENGLISH</option>
+						<option value="ODIA">ODIA</option>
+						<option value="HINDI">HINDI</option>
+						<option value="BENGALI">BENGALI</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Hobbies</td>
+				<td><input type="checkbox" name="hobbies" value="Reading">Reading&nbsp;&nbsp;
+				<input type="checkbox" name="hobbies" value="Watching TV">Watching TV&nbsp;&nbsp;
+				<input type="checkbox" name="hobbies" value="Playing Cricket">Playing Cricket</td>
+			</tr>
+			<tr>
+				<td>Date Of Birth</td>
+				<td><input type="date" name="dob"></td>
+			</tr>
+			<tr>
+				<td>Time Of Birth</td>
+				<td><input type="time" name="tob"></td>
+			</tr>
+			<tr>
+				<td>Month Name Of Birth</td>
+				<td><input type="month" name="mob"></td>
+			</tr>
+			<tr>
+				<td>Week Number And Year Of Birth</td>
+				<td><input type="week" name="wob"></td>
+			</tr>
+			<tr>
+				<td>Select Fav Number</td>
+				<td><input type="range" name="fav_no"></td>
+			</tr>
+			<tr>
+				<td>Phone Number</td>
+				<td><input type="tel" name="phone"></td>
+			</tr>
+			<tr>
+				<td>Email ID</td>
+				<td><input type="email" name="email"></td>
+			</tr>
+			<tr>
+				<td>Fav Color</td>
+				<td><input type="color" name="color"></td>
+			</tr>
+			<tr>
+				<td>Person Income</td>
+				<td><input type="number" min="10000" max="100000" name="income"></td>
+			</tr>
+			<tr>
+				<td>Facebook URL</td>
+				<td><input type="url" name="fb_url"></td>
+			</tr>
+			<tr>
+				<td>Google Fav Search</td>
+				<td><input type="search" name="favSearch"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Process Details"></td>
+				<td><input type="reset" value="Reset"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
