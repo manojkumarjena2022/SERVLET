@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Send Redirect</title>
+</head>
+<body>
+	<h1>Send redirection using hyperlinks</h1>
+	<form action="searchurl" method="post">
+		<table>
+			<tr>
+				<td>Serach String :</td>
+				<td><input type="text" name="query" required></td>
+			</tr>
+			<tr>
+				<td>Serach Engine :</td>
+				<td>
+				<input type="radio" name="engine" value="google" checked="checked">Google
+				<input type="radio" name="engine" value="yahho">Yahoo
+				<input type="radio" name="engine" value="bing">Bing
+				</td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Search"></td>
+				<td><input type="reset" name="Cancel"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
