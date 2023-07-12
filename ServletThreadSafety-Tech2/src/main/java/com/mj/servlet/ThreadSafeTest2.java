@@ -38,13 +38,6 @@ public class ThreadSafeTest2 extends HttpServlet{
 		PrintWriter pw=resp.getWriter();
 		//set content type
 		resp.setContentType("text/html");
-
-		try {
-			//load oracle jdbc driver
-			Class.forName("oracle.jdbc.OracleDriver");
-		} catch (ClassNotFoundException e) {
-			System.out.println("Oracle jdbc driver class not found");
-		}
 		try(PreparedStatement ps=con.prepareStatement(EMP_QUERY)) {
 			if (ps!=null) {
 				try(ResultSet rs=ps.executeQuery())
