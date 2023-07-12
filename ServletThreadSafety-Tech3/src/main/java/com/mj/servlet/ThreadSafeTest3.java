@@ -20,7 +20,7 @@ public class ThreadSafeTest3 extends HttpServlet{
 	Connection con;
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		//achieving thread safety by making all comp as local data to service()/ doXXX()
+		//achieving thread safety by using object task inside synchronized block
 		final String EMP_QUERY="SELECT * FROM EMPLOYEES";
 		//get writer
 		PrintWriter pw=resp.getWriter();
